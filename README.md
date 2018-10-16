@@ -1,4 +1,18 @@
-# Project-riscv
+CS61C Summer 2018 Project 2: RISC-V Instruction Set Emulator
+TA: Sean Farhat
+
+Part 1 due Friday, July 6th @ 23:59:59 PST
+Part 2 due Friday, July 13th @ 23:59:59 PST
+Updates:
+Any updates will be listed here. To pull updates at any time, run the following:
+          $ git pull proj2-starter master
+      
+7/3 12:15 PM: There was a bug in how the immediate field was stored in the union, please pull the update
+7/5 11:34 AM: A new test, unsigned.input/.solution, was added. This should cover more instructions, but remember, not all instructions are covered by the given tests, so please be sure to make your own. Instructions for making your own tests are on the project website. Also, make sure to include the name of any new tests, including this one, in the Makefile. If you don't, they won't be tested when you run "make part1".
+7/5 3:45 PM: There was a bug in a comment in types.h that talked about "j-type" when it was supposed to say "u-type"
+7/6: 9:54 AM: Part 2 files now released!
+7/9: 3:35 PM: There was a bug in the Makefile that wouldn't allow you to test your part2 given certain conditions. Please pull the update. It may cause a merge conflict if you have modified the Makefile, so refer to Lab 0 on how to resolve these.
+7/9: 9:33 PM: In utils.c, I added an exit(-1) statement that way there is consistency among how invalid instructions are treated. Please note that Error 255 means that you're hitting an exit(-1) statement. Again, might cause merge conflicts, so handle those appropriately.
 Goals
 We hope this project will enhance your C programming skills, deepen your understanding of RISC-V instructions and their formats, and prepare you for what's to come later in this course.
 
